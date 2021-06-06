@@ -139,13 +139,9 @@ class StoryVideoState extends State<StoryVideo> {
                 ),
               )
             : widget.loader!
-        : Center(
-            child: Text(
-            "Media failed to load.",
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ));
+        : Container(
+            color: Colors.black,
+          );
   }
 
   @override
